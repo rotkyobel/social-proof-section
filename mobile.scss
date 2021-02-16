@@ -1,0 +1,80 @@
+body {
+  font-size: 15px;
+  font-family: Spartan, sans-serif;
+  // background-color: rgba($color: red, $alpha: 0.2);
+  background-image: url("./images/bg-pattern-top-mobile.svg"), url("./images/bg-pattern-bottom-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: left 0vw top 0vh, right 0vw bottom 0vh;
+  padding: 25px;
+}
+
+.hero {
+  flex-wrap: wrap;
+  flex-direction: row;
+  min-width: 100%;
+  height: 100%;
+  // margin-top: 100px;
+  // margin-bottom: 50px;
+
+  &-top {
+    margin-top: 100px;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    &-left {
+      // margin-top: 600px;
+      width: 100%;
+      padding-right: 0;
+      text-align: center;
+
+      h1 {
+        font-size: 35px;
+        line-height: 35px;
+      }
+
+      p {
+        font-size: 13.5px;
+        line-height: 20px;
+        margin: 30px 0;
+      }
+    }
+
+    &-right {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+
+      .review {
+        height: auto;
+        width: 100%;
+        padding: 15px 20px;
+        flex-direction: column;
+
+        &-stars {
+          padding-bottom: 15px;
+        }
+      }
+    }
+  }
+
+  &-bottom {
+    margin-top: 50px;
+    height: auto;
+    width: 100%;
+    flex-wrap: wrap;
+
+    &-card {
+      width: 100%;
+      margin-bottom: 20px;
+      padding: 30px 20px;
+    }
+    .start {
+      margin-bottom: 20px;
+    }
+
+    .end {
+      margin-bottom: 100px;
+    }
+  }
+}
